@@ -12,10 +12,11 @@ body{
 
 section .nav{
     /* border: 1px solid black; */
-      background-repeat: no-repeat;
-        overflow: hidden;
-           background-position: right;
-           height: 90px;
+  background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: right;
+    height: 110px;
+    margin-bottom: 2rem;
 
 }
 
@@ -61,6 +62,7 @@ section .nav{
 .right{
         margin-top: 20px;
     width: 40%;
+    transition: transform 4s;
 }
 
 .right .img-div{
@@ -126,7 +128,8 @@ section .nav{
 }
 .nav h2{
     padding-left: 20px;
-    font-size: 2.6rem;
+    font-size: 2rem;
+    padding-top: 1.8rem;
 }
 
 }
@@ -158,6 +161,7 @@ section .nav{
     background-repeat: no-repeat;
     height: 250px;
     background-size: 200px;
+    transition: transform 4s;
 }
 
 .img-div2:nth-of-type(1){
@@ -356,10 +360,12 @@ tr:nth-child(even) {
 .question .q-item{
     flex-direction: column;
     height: auto !important;
+    background-image: none !important;
 }
 
 .question .q-item2{
      height: auto !important;
+     background-image: none !important;
 
 }
 
@@ -408,6 +414,14 @@ section .better{
     
 }
 
+/* .question .q-item2:hover{
+    margin-left:40px;
+}
+
+.question .q-item:hover{
+    margin-left:40px;
+} */
+
 .q-item img{
     width: 180px;
     height: 180px;
@@ -431,13 +445,18 @@ section .better{
 
 
 @media (max-width: 768px) {
-    .ana{
+
+
+    .question{
         width: auto !important;
+    }
+    .ana{
+        width: 90% !important;
         overflow: scroll;
     }
 
     .chart{
-        width: auto !important;
+        width: 90% !important;
         overflow-y: scroll !important;
        
 
@@ -449,7 +468,7 @@ section .better{
 
     .question p{
         font-size: 14px;
-        width: 18rem;
+        width: auto !important;
 
     }
 
@@ -460,6 +479,12 @@ section .better{
     .question .q-item2{
         padding: auto;
     }
+
+    section .better{
+
+    margin-top: auto !important;
+
+}
 
 
 
@@ -494,7 +519,7 @@ margin-top: 1rem;
 
     .brik{
             background-color: orange;
-    width: 40%;
+    width: 60%;
     margin-bottom: 10px;
 
     height: 90px;
@@ -522,8 +547,10 @@ margin-top: 1rem;
 
 .brik span{
         padding: 20px;
-    width: 140px;
+
     text-align: justify;
+    letter-spacing: 1px;
+    line-height: 1.4rem;
     font-weight: 600;
 }
 
@@ -541,9 +568,10 @@ margin-top: 1rem;
     }
 
     .card2{
+        height: 400px !important;
             background-size: contain;
     background-position: center;
-    border: 10px solid red;
+        
     background-image: url(images/brik.png);
     }
 
@@ -554,6 +582,10 @@ margin-top: 1rem;
 
     .brik:nth-of-type(even){
         margin:auto;
+    }
+
+    .motar-magic{
+        margin-bottom: 1rem !important;
     }
 
     
@@ -582,19 +614,31 @@ margin-top: 1rem;
     justify-content: center;
     margin-top: 2rem;
     align-items: center;
+    border: 2px solid #F0D3B5;
+    padding: 20px 0px 20px 0;
     
+    
+}
+
+.parent img{
+      transition: transform .2s;
+}
+
+.parent img:hover{
+      transform: scale(0.8); 
 }
 
 .gal img{
     width: 400px;
+    padding: 10px;
 }
 
 .parent p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: justify;
     padding: 20px;
-    line-height: 2rem;
-    letter-spacing: 2px;
+    line-height: 1.8rem;
+    letter-spacing: 1px;
     
 }
 
@@ -626,5 +670,18 @@ margin-top: 1rem;
     .gal img{
         width: 250px;
     }
+
+}
+
+
+
+
+/* For tablet media */
+
+@media (max-width: 1024px) {
+
+    display: none;
+
+
 
 }
